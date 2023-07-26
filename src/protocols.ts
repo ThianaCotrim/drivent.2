@@ -11,6 +11,25 @@ export type ViaCEPAddress = {
   uf: string;
 };
 
+export type TicketTypeId = {
+  ticketTypeId : number;
+}
+
+export type CardData = {
+  issuer: string;
+  number: number;
+  name: string;
+  expirationDate: Date;
+  cvv: number;
+} 
+
+export type InputPayment = {
+  ticketId: number;
+  cardData: CardData;
+}
+
+
+
 export type ViaCEPAddressError = {
   error: boolean;
 };
